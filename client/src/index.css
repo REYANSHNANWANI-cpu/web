@@ -82,6 +82,6 @@ h1 em, h2 span { color: var(--violet); font-style: normal; }
 .business-section h2 { max-width: 780px; margin-top: 16px; font: 700 clamp(2.7rem, 5.5vw, 5.2rem)/.96 'Anthropic Sans', sans-serif; letter-spacing: -.07em; }
 .business-section h2 span { color: var(--violet); }
 .business-copy { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px 58px; max-width: 900px; margin-top: 42px; }
-.business-copy p { color: #716e7a; font-size: 14px; line-height: 1.75; }
+.business-copy p { color: #252246; font: 600 17px/1.65 'Anthropic Sans', sans-serif; letter-spacing: -.01em; }
 .business-copy .business-close { grid-column: 1 / -1; max-width: 690px; padding: 20px 0 0 22px; border-left: 3px solid var(--violet); color: var(--ink); font: 600 17px/1.45 'Anthropic Sans', sans-serif; letter-spacing: -.025em; }
-@media (max-width: 640px) { .business-copy { grid-template-columns: 1fr; gap: 19px; margin-top: 30px; }.business-copy .business-close { grid-column: auto; padding-left: 16px; font-size: 15px; }.business-section::after { width: 280px; height: 280px; right: -150px; top: -65px; } }
+@media (max-width: 640px) { .business-copy { grid-template-columns: 1fr; gap: 19px; margin-top: 30px; }.business-copy p { font-size: 15px; }.business-copy .business-close { grid-column: auto; padding-left: 16px; }.business-section::after { width: 280px; height: 280px; right: -150px; top: -65px; } }
