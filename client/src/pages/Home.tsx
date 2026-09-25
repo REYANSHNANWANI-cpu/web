@@ -4,6 +4,7 @@ import { ArrowDownRight, ArrowUpRight, Menu, X } from "lucide-react";
 
 type Project = {
   title: string;
+  keyword: string;
   description: string;
   category: string;
   accent: string;
@@ -11,18 +12,18 @@ type Project = {
 };
 
 const projects: Project[] = [
-  { title: "SwapToys India", description: "A toy exchange marketplace with listings, profiles, and community messaging.", category: "Marketplace", accent: "#f7cfd3", url: "https://swaptoys-india-a794.arcada.app" },
-  { title: "CalcCheck — Clear, Verified Math", description: "A focused learning tool that makes arithmetic verification simple and understandable.", category: "Education", accent: "#d7e8ff", url: "https://calc-check-dq24.arcada.app" },
-  { title: "Web Scraper Agent — AI-Powered URL Summarizer", description: "A fast AI utility with freemium access, usage limits, and scrape history.", category: "AI / SaaS", accent: "#ddd7ff", url: "https://webscrapingbygroq.netlify.app" },
-  { title: "Aakar Hardware Store", description: "A warm local-commerce experience with a product catalog, maps, and WhatsApp integration.", category: "Local Business", accent: "#f1dec3", url: "https://aakarhardware.vercel.app" },
-  { title: "IronPulse Athletics — Engineered for Strength", description: "A high-energy digital home for a performance-led fitness brand.", category: "Fitness", accent: "#e8c9b9", url: "https://uw1nxp-ogfn2vr55-arcadawebapps9.vercel.app" },
-  { title: "VOID ARCHIVE — Drop 004", description: "A cyberpunk streetwear drop experience built around scarcity and attitude.", category: "Fashion", accent: "#c8c4ff", url: "https://mluxml-5obafhse5-arcadawebapps2.vercel.app" },
-  { title: "Aura Occasions — Bespoke Weddings & Corporate Events Atelier", description: "A premium atelier presence for extraordinary celebrations and gatherings.", category: "Events", accent: "#f0d7de", url: "https://rgnfxg-dfkth3zrn-arcedawebapps1.vercel.app" },
-  { title: "The Rustic Table — Farm-to-Table Bistro & Coffee House", description: "A sensory hospitality site that brings the warmth of a neighborhood table online.", category: "Hospitality", accent: "#e0d1b9", url: "https://sni4kc-okafs4gqv-arcadawebapps8.vercel.app" },
-  { title: "Meridian Realty Partners — Architectural Real Estate", description: "A considered property experience shaped around architectural distinction.", category: "Real Estate", accent: "#d2dde0", url: "https://3dsigx-2swjga82a-arcadawebapps5.vercel.app" },
-  { title: "Nordic Living — Timeless Woodcraft for Modern Living", description: "A quiet commerce experience rooted in craft, material quality, and restraint.", category: "Furniture", accent: "#e5dccd", url: "https://7zwq5e-5180u70u0-arcadawebapps2.vercel.app" },
-  { title: "Frame & Shutter — Visual Storyteller & Commercial Cinematographer", description: "A cinematic portfolio that gives every frame room to make an impression.", category: "Photography", accent: "#cfd6e9", url: "https://a4lcka-9xpfs2pgi-arcadawebapps9.vercel.app" },
-  { title: "ExcelPoint Academic Academy & Private Tutoring", description: "A clear, credible learning platform for ambitious students and families.", category: "Education", accent: "#d3e6d5", url: "https://2knzzc-iyv41yh76-arcadawebapps9.vercel.app" },
+  { title: "SwapToys India", keyword: "Toys", description: "A toy exchange marketplace with listings, profiles, and community messaging.", category: "Marketplace", accent: "#f7cfd3", url: "https://swaptoys-india-a794.arcada.app" },
+  { title: "CalcCheck — Clear, Verified Math", keyword: "Calc", description: "A focused learning tool that makes arithmetic verification simple and understandable.", category: "Education", accent: "#d7e8ff", url: "https://calc-check-dq24.arcada.app" },
+  { title: "Web Scraper Agent — AI-Powered URL Summarizer", keyword: "Webscraper", description: "A fast AI utility with freemium access, usage limits, and scrape history.", category: "AI / SaaS", accent: "#ddd7ff", url: "https://webscrapingbygroq.netlify.app" },
+  { title: "Aakar Hardware Store", keyword: "Hardware", description: "A warm local-commerce experience with a product catalog, maps, and WhatsApp integration.", category: "Local Business", accent: "#f1dec3", url: "https://aakarhardware.vercel.app" },
+  { title: "IronPulse Athletics — Engineered for Strength", keyword: "Strength", description: "A high-energy digital home for a performance-led fitness brand.", category: "Fitness", accent: "#e8c9b9", url: "https://uw1nxp-ogfn2vr55-arcadawebapps9.vercel.app" },
+  { title: "VOID ARCHIVE — Drop 004", keyword: "Streetwear", description: "A cyberpunk streetwear drop experience built around scarcity and attitude.", category: "Fashion", accent: "#c8c4ff", url: "https://mluxml-5obafhse5-arcadawebapps2.vercel.app" },
+  { title: "Aura Occasions — Bespoke Weddings & Corporate Events Atelier", keyword: "Occasions", description: "A premium atelier presence for extraordinary celebrations and gatherings.", category: "Events", accent: "#f0d7de", url: "https://rgnfxg-dfkth3zrn-arcedawebapps1.vercel.app" },
+  { title: "The Rustic Table — Farm-to-Table Bistro & Coffee House", keyword: "Bistro", description: "A sensory hospitality site that brings the warmth of a neighborhood table online.", category: "Hospitality", accent: "#e0d1b9", url: "https://sni4kc-okafs4gqv-arcadawebapps8.vercel.app" },
+  { title: "Meridian Realty Partners — Architectural Real Estate", keyword: "Realty", description: "A considered property experience shaped around architectural distinction.", category: "Real Estate", accent: "#d2dde0", url: "https://3dsigx-2swjga82a-arcadawebapps5.vercel.app" },
+  { title: "Nordic Living — Timeless Woodcraft for Modern Living", keyword: "Woodcraft", description: "A quiet commerce experience rooted in craft, material quality, and restraint.", category: "Furniture", accent: "#e5dccd", url: "https://7zwq5e-5180u70u0-arcadawebapps2.vercel.app" },
+  { title: "Frame & Shutter — Visual Storyteller & Commercial Cinematographer", keyword: "Frames", description: "A cinematic portfolio that gives every frame room to make an impression.", category: "Photography", accent: "#cfd6e9", url: "https://a4lcka-9xpfs2pgi-arcadawebapps9.vercel.app" },
+  { title: "ExcelPoint Academic Academy & Private Tutoring", keyword: "Tutoring", description: "A clear, credible learning platform for ambitious students and families.", category: "Education", accent: "#d3e6d5", url: "https://2knzzc-iyv41yh76-arcadawebapps9.vercel.app" },
 ];
 
 const services = [
@@ -95,7 +96,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       transition={{ duration: 0.65, delay: Math.min(index % 3, 2) * 0.08 }}
     >
       <div className="project-art" style={{ backgroundColor: project.accent }}>
-        <div className={`art-window art-window-${index % 4}`}><div className="art-toolbar"><span /><span /><span /></div><div className="art-layout"><b>{project.category}</b><strong>{String(index + 1).padStart(2, "0")}</strong><i /></div></div>
+        <div className={`art-window art-window-${index % 4}`}><div className="art-toolbar"><span /><span /><span /></div><div className="art-layout"><b>{project.category}</b><span className="art-keyword">{project.keyword}</span><strong>{String(index + 1).padStart(2, "0")}</strong><i /></div></div>
         <span className="art-corner">↗</span>
       </div>
       <div className="project-meta"><span>{project.category}</span><span>{String(index + 1).padStart(2, "0")}</span></div>
