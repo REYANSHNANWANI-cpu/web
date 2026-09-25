@@ -121,3 +121,6 @@ h1 em, h2 span { color: var(--violet); font-style: normal; }
 
 .art-keyword { position: absolute; left: 18px; top: 43%; z-index: 2; display: inline-flex; align-items: center; max-width: calc(100% - 36px); padding: 7px 10px; border-radius: 7px; background: rgba(255,255,255,.78); color: var(--ink); font: 600 11px 'Anthropic Sans', sans-serif; letter-spacing: -.02em; box-shadow: 0 6px 14px rgba(43,35,73,.08); transition: transform .18s ease, background .18s ease; }
 .project-card:hover .art-keyword { transform: translateY(-2px); background: rgba(255,255,255,.96); }
+
+.page-project-keyword { position: absolute; left: 22px; bottom: 22px; z-index: 2; display: inline-flex; align-items: center; gap: 5px; padding: 8px 10px; border-radius: 8px; background: rgba(255,255,255,.82); color: var(--ink); font: 600 11px 'Anthropic Sans', sans-serif; box-shadow: 0 7px 16px rgba(43,35,73,.1); transition: transform .18s ease, background .18s ease; }
+.page-project-keyword:hover { transform: translateY(-2px); background: #fff; }

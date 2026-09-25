@@ -34,12 +34,18 @@ const pageConfig: Record<PageKind, PageConfig> = {
 };
 
 const projects = [
-  ["SwapToys India", "Marketplace", "A clear, friendly experience for discovering and exchanging toys."],
-  ["CalcCheck", "Education", "A focused learning tool built around clarity and confidence."],
-  ["Aakar Hardware Store", "Local business", "A warm catalogue experience with maps and direct contact paths."],
-  ["IronPulse Athletics", "Fitness", "A high-energy digital home for a performance-led brand."],
-  ["Aura Occasions", "Events", "A premium presence for extraordinary celebrations and gatherings."],
-  ["Meridian Realty Partners", "Real estate", "An architectural property experience with a considered point of view."],
+  { title: "SwapToys India", keyword: "Toys", category: "Marketplace", description: "A clear, friendly experience for discovering and exchanging toys.", url: "https://swaptoys-india-a794.arcada.app" },
+  { title: "CalcCheck — Clear, Verified Math", keyword: "Calc", category: "Education", description: "A focused learning tool that makes arithmetic verification simple and understandable.", url: "https://calc-check-dq24.arcada.app" },
+  { title: "Web Scraper Agent — AI-Powered URL Summarizer", keyword: "Webscraper", category: "AI / SaaS", description: "A fast AI utility with freemium access, usage limits, and scrape history.", url: "https://webscrapingbygroq.netlify.app" },
+  { title: "Aakar Hardware Store", keyword: "Hardware", category: "Local business", description: "A warm catalogue experience with maps and direct contact paths.", url: "https://aakarhardware.vercel.app" },
+  { title: "IronPulse Athletics — Engineered for Strength", keyword: "Strength", category: "Fitness", description: "A high-energy digital home for a performance-led brand.", url: "https://uw1nxp-ogfn2vr55-arcadawebapps9.vercel.app" },
+  { title: "VOID ARCHIVE — Drop 004", keyword: "Streetwear", category: "Fashion", description: "A cyberpunk streetwear drop experience built around scarcity and attitude.", url: "https://mluxml-5obafhse5-arcadawebapps2.vercel.app" },
+  { title: "Aura Occasions — Bespoke Weddings & Corporate Events Atelier", keyword: "Occasions", category: "Events", description: "A premium presence for extraordinary celebrations and gatherings.", url: "https://rgnfxg-dfkth3zrn-arcedawebapps1.vercel.app" },
+  { title: "The Rustic Table — Farm-to-Table Bistro & Coffee House", keyword: "Bistro", category: "Hospitality", description: "A sensory hospitality site that brings the warmth of a neighborhood table online.", url: "https://sni4kc-okafs4gqv-arcadawebapps8.vercel.app" },
+  { title: "Meridian Realty Partners — Architectural Real Estate", keyword: "Realty", category: "Real estate", description: "An architectural property experience with a considered point of view.", url: "https://3dsigx-2swjga82a-arcadawebapps5.vercel.app" },
+  { title: "Nordic Living — Timeless Woodcraft for Modern Living", keyword: "Woodcraft", category: "Furniture", description: "A quiet commerce experience rooted in craft, material quality, and restraint.", url: "https://7zwq5e-5180u70u0-arcadawebapps2.vercel.app" },
+  { title: "Frame & Shutter — Visual Storyteller & Commercial Cinematographer", keyword: "Frames", category: "Photography", description: "A cinematic portfolio that gives every frame room to make an impression.", url: "https://a4lcka-9xpfs2pgi-arcadawebapps9.vercel.app" },
+  { title: "ExcelPoint Academic Academy & Private Tutoring", keyword: "Tutoring", category: "Education", description: "A clear, credible learning platform for ambitious students and families.", url: "https://2knzzc-iyv41yh76-arcadawebapps9.vercel.app" },
 ];
 
 const services = [
@@ -69,7 +75,7 @@ function PageIntro({ config }: { config: PageConfig }) {
 }
 
 export function WorkPage() {
-  return <PageLayout kind="work"><div className="page-project-grid">{projects.map(([title, category, description], index) => <article className="page-project-card" key={title}><div className={`page-project-art page-project-art-${index % 3}`}><span>{String(index + 1).padStart(2, "0")}</span></div><small>{category}</small><h2>{title}</h2><p>{description}</p><a href="mailto:reyanshnanwani1@gmail.com">Discuss a similar project <ArrowUpRight size={14} /></a></article>)}</div></PageLayout>;
+  return <PageLayout kind="work"><div className="page-project-grid">{projects.map((project, index) => <article className="page-project-card" key={project.title}><div className={`page-project-art page-project-art-${index % 3}`}><span>{String(index + 1).padStart(2, "0")}</span><a className="page-project-keyword" href={project.url} target="_blank" rel="noreferrer">{project.keyword} <ArrowUpRight size={12} /></a></div><small>{project.category}</small><h2>{project.title}</h2><p>{project.description}</p><a href="mailto:reyanshnanwani1@gmail.com">Discuss a similar project <ArrowUpRight size={14} /></a></article>)}</div></PageLayout>;
 }
 
 export function ServicesPage() {
