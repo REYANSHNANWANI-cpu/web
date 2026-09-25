@@ -118,7 +118,7 @@ export default function Home() {
       <header className="site-nav">
         <a className="brand" href="#top" aria-label="Reyansh Nanwani home"><span className="brand-mark">RN</span><span><b>Reyansh Nanwani</b><small>Web Designer & Developer</small></span></a>
         <div className="nav-controls">
-          <nav className={menuOpen ? "nav-links is-open" : "nav-links"} aria-label="Primary navigation"><a href="#work" onClick={() => setMenuOpen(false)}>Work</a><a href="#services" onClick={() => setMenuOpen(false)}>Services</a><a href="#studio" onClick={() => setMenuOpen(false)}>Studio</a><a href="#top" onClick={() => setMenuOpen(false)}>Why build a website?</a></nav>
+          <nav className={menuOpen ? "nav-links is-open" : "nav-links"} aria-label="Primary navigation"><a href="/work" onClick={() => setMenuOpen(false)}>Work</a><a href="/services" onClick={() => setMenuOpen(false)}>Services</a><a href="/studio" onClick={() => setMenuOpen(false)}>Studio</a><a href="/why-build-a-website" onClick={() => setMenuOpen(false)}>Why build a website?</a></nav>
           <a className="nav-cta" href="mailto:reyanshnanwani1@gmail.com">Start a project <ArrowUpRight size={14} /></a>
           <button className="menu-toggle" onClick={() => setMenuOpen(value => !value)} aria-label="Toggle navigation" aria-expanded={menuOpen}>{menuOpen ? <X size={20} /> : <Menu size={20} />}</button>
         </div>
