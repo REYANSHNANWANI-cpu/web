@@ -75,7 +75,7 @@ function PageIntro({ config }: { config: PageConfig }) {
 }
 
 export function WorkPage() {
-  return <PageLayout kind="work"><div className="page-project-grid">{projects.map((project, index) => <article className="page-project-card" key={project.title}><div className={`page-project-art page-project-art-${index % 3}`}><span>{String(index + 1).padStart(2, "0")}</span><a className="page-project-keyword" href={project.url} target="_blank" rel="noreferrer">{project.keyword} <ArrowUpRight size={12} /></a></div><small>{project.category}</small><h2>{project.title}</h2><p>{project.description}</p><a href="mailto:reyanshnanwani1@gmail.com">Discuss a similar project <ArrowUpRight size={14} /></a></article>)}</div></PageLayout>;
+  return <PageLayout kind="work"><div className="page-project-grid">{projects.map((project, index) => <article className="page-project-card" key={project.title}><a className={`page-project-art page-project-art-${index % 3}`} href={project.url} target="_blank" rel="noreferrer" aria-label={`Open ${project.title} website`}><span>{String(index + 1).padStart(2, "0")}</span><span className="page-project-keyword">{project.keyword} <ArrowUpRight size={12} /></span></a><small>{project.category}</small><h2>{project.title}</h2><p>{project.description}</p><a href="mailto:reyanshnanwani1@gmail.com">Discuss a similar project <ArrowUpRight size={14} /></a></article>)}</div></PageLayout>;
 }
 
 export function ServicesPage() {
