@@ -134,7 +134,6 @@ export default function Home() {
               <div className="hero-copy">
                 <h1><span>Web experiences</span><span>built to <em>move</em></span><span>business forward.</span></h1>
                 <p>Strategy, design, and full-stack development for businesses that want a clear, credible, and high-performing digital presence.</p>
-                <div className="hero-hypertexts" aria-label="Explore the website"><a href="https://webbuilderreyansh.in/work"><strong>Want to know our projects that we are working on?</strong><span>Click on the text.</span> <ArrowUpRight size={16} /></a><a href="https://webbuilderreyansh.in/"><strong>Confused why to build a website?</strong><span>Click on the text.</span> <ArrowUpRight size={16} /></a></div>
                 <div className="hero-actions"><a className="button-dark" href="mailto:reyanshnanwani1@gmail.com">Tell me about your project <ArrowUpRight size={16} /></a><a className="text-link" href="#work">Explore selected work <ArrowDownRight size={16} /></a></div>
               </div>
               <BrowserPreview />
@@ -153,6 +152,7 @@ export default function Home() {
               <p>Your website works 24/7, helps customers find you on Google, builds credibility, and makes it easier for people to contact you and enquire about your services. You also own and control your website, unlike social media platforms where algorithms and account changes can affect your reach.</p>
               <p>Use Instagram and WhatsApp to attract customers. Use your website to turn that attention into enquiries and sales.</p>
               <p className="business-close">Let us build a professional website that makes your business look trustworthy, modern, and ready to grow.</p>
+              <div className="business-links" aria-label="Learn more about websites"><a href="https://webbuilderreyansh.in/work"><strong>Our Projects.</strong><span>Click Here.</span><ArrowUpRight size={16} /></a><a href="https://webbuilderreyansh.in/why-build-a-website"><strong>Confused why should you build a website?</strong><span>Click Here.</span><ArrowUpRight size={16} /></a></div>
             </div>
           </div>
         </section>
