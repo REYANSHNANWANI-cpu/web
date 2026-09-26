@@ -134,8 +134,8 @@ export default function Home() {
               <div className="hero-copy">
                 <h1><span>Web experiences</span><span>built to <em>move</em></span><span>business forward.</span></h1>
                 <p>Strategy, design, and full-stack development for businesses that want a clear, credible, and high-performing digital presence.</p>
+                <div className="hero-hypertexts" aria-label="Explore the website"><a href="https://webbuilderreyansh.in/work"><strong>Want to know our projects that we are working on?</strong><span>Click on the text.</span> <ArrowUpRight size={16} /></a><a href="https://webbuilderreyansh.in/"><strong>Confused why to build a website?</strong><span>Click on the text.</span> <ArrowUpRight size={16} /></a></div>
                 <div className="hero-actions"><a className="button-dark" href="mailto:reyanshnanwani1@gmail.com">Tell me about your project <ArrowUpRight size={16} /></a><a className="text-link" href="#work">Explore selected work <ArrowDownRight size={16} /></a></div>
-                <div className="hero-hypertexts" aria-label="Explore the website"><a href="https://webbuilderreyansh.in/work">Want to know our projects that we are working on? <span>Click on the text.</span> <ArrowUpRight size={14} /></a><a href="https://webbuilderreyansh.in/">Confused why to build a website? <span>Click on the text.</span> <ArrowUpRight size={14} /></a></div>
               </div>
               <BrowserPreview />
             </div>

@@ -29,7 +29,7 @@ button { border: 0; }
 .button-dark:active { transform: scale(.98); }
 .menu-toggle { display: inline-grid; place-items: center; width: 36px; height: 36px; background: transparent; color: var(--ink); cursor: pointer; border-radius: 9px; transition: background .18s ease; }
 .menu-toggle:hover { background: rgba(103,89,219,.1); }
-.hero-section { position: relative; min-height: 790px; padding: 112px 24px 0; isolation: isolate; }
+.hero-section { position: relative; min-height: 900px; padding: 145px 24px 0; isolation: isolate; }
 .shader-field { position: absolute; inset: 0; z-index: -1; overflow: hidden; background: radial-gradient(circle at 70% 40%, rgba(255,255,255,.9), transparent 34%), linear-gradient(112deg, #f9f5ff 0%, #eeebff 46%, #eeeafd 100%); }
 .shader-core { position: absolute; width: 78vw; height: 78vw; max-width: 1000px; max-height: 1000px; right: -17vw; top: -33vw; border-radius: 50%; opacity: .5; background: repeating-conic-gradient(from 210deg, rgba(119, 98, 231, .22) 0deg 7deg, transparent 7deg 18deg), radial-gradient(circle, rgba(255,255,255,.5), transparent 62%); filter: blur(1px); animation: shaderDrift 18s linear infinite; }
 .shader-glow { position: absolute; border-radius: 50%; filter: blur(50px); mix-blend-mode: multiply; opacity: .35; animation: glowFloat 10s ease-in-out infinite alternate; }
@@ -51,10 +51,11 @@ h1 em, h2 span { color: var(--violet); font-style: normal; }
 .hero-actions { display: flex; align-items: center; gap: 23px; margin-top: 27px; }
 .text-link { display: inline-flex; align-items: center; gap: 8px; color: #716e7a; font-size: 11px; font-weight: 600; transition: color .18s ease, gap .18s ease; background: transparent; padding: 0; }
 .text-link:hover { color: var(--ink); gap: 12px; }
-.hero-hypertexts { display: grid; gap: 12px; max-width: 520px; margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--line); }
-.hero-hypertexts a { display: inline-flex; align-items: center; gap: 7px; width: fit-content; color: #4c43aa; font-size: 12px; font-weight: 700; line-height: 1.45; transition: color .18s ease, gap .18s ease; }
-.hero-hypertexts a span { color: var(--ink); font-weight: 600; }
-.hero-hypertexts a:hover { color: var(--ink); gap: 11px; }
+.hero-hypertexts { display: grid; gap: 12px; max-width: 590px; margin-top: 34px; }
+.hero-hypertexts a { display: flex; align-items: center; gap: 10px; width: 100%; padding: 15px 17px; border: 1px solid rgba(103,89,219,.2); border-radius: 12px; background: rgba(255,255,255,.62); color: #4c43aa; font-size: 13px; font-weight: 700; line-height: 1.45; box-shadow: 0 9px 20px rgba(66,48,126,.06); transition: color .18s ease, gap .18s ease, transform .18s ease, background .18s ease; }
+.hero-hypertexts a strong { flex: 1; }
+.hero-hypertexts a span { color: var(--ink); font-weight: 600; white-space: nowrap; }
+.hero-hypertexts a:hover { color: var(--ink); gap: 14px; transform: translateY(-2px); background: rgba(255,255,255,.92); }
 .browser-stage { min-height: 356px; perspective: 1100px; display: grid; place-items: center; }
 .browser-wrap { position: relative; width: min(100%, 610px); transform-style: preserve-3d; }
 .browser-card { overflow: hidden; border-radius: 15px; background: #fff; box-shadow: 0 35px 70px rgba(66, 48, 126, .18), 0 3px 0 rgba(255,255,255,.9) inset; transform-style: preserve-3d; }
@@ -128,7 +129,7 @@ h1 em, h2 span { color: var(--violet); font-style: normal; }
 .project-card:hover .art-keyword { transform: translateY(-2px); background: rgba(255,255,255,.96); }
 
 @media (max-width: 640px) {
-  .hero-section { padding-top: 70px; min-height: 900px; }
+  .hero-section { padding-top: 85px; min-height: 1080px; }
   .hero-hypertexts { margin-top: 28px; }
   .hero-hypertexts a { font-size: 11px; }
 }
